@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Informe de Proyecto de Investigación</title>
+  </head>
+
+  <body>
+    <form id="form" method="post">
+      <h1>Informe de Proyecto de Investigación</h1>
+
+      <!-- Documentación del Formulario -->
+      <section>
+        <h2>1. Introducción</h2>
+        <p>
+          Este formulario está diseñado para recopilar información detallada
+          sobre el progreso de un proyecto de investigación. Se divide en
+          secciones que abarcan desde la información general del proyecto hasta
+          la evaluación y observaciones de los directores académicos.
+        </p>
+        <p><strong>Uso del Formulario:</strong></p>
+        <ul>
+          <li>
+            Complete todos los campos obligatorios (marcados con asterisco).
+          </li>
+          <li>Proporcione información precisa y actualizada.</li>
+          <li>
+            Si un campo no es aplicable, déjelo en blanco o seleccione la opción
+            "N/A" si está disponible.
+          </li>
+          <li>Firme y feche el formulario al final.</li>
+        </ul>
+      </section>
+
+      <!-- I. Pagina principal con datos generales -->
+      <section>
+        <h2>I. GENERALIDADES</h2>
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required />
+
+        <label for="codigo">Código:</label>
+        <input type="text" id="codigo" name="codigo" required />
+
+        <label for="categoriaAcademica">Categoría Académica:</label>
+        <input
+          type="text"
+          id="categoriaAcademica"
+          name="categoriaAcademica"
+          required
+        />
+
+        <label for="facultad">Facultad:</label>
+        <input type="text" id="facultad" name="facultad" required />
+
+        <label for="instituto">Instituto:</label>
+        <input type="text" id="instituto" name="instituto" required />
+
+        <label for="escuela">Escuela (si es docente):</label>
+        <input type="text" id="escuela" name="escuela" />
+
+        <label for="lineaInvestigacion">Línea de Investigación:</label>
+        <input
+          type="text"
+          id="lineaInvestigacion"
+          name="lineaInvestigacion"
+          required
+        />
+
+        <label for="programa">Programa (si aplica):</label>
+        <input type="text" id="programa" name="programa" />
+
+        <label for="horasSemanales">Horas Semanales Contratadas:</label>
+        <input
+          type="number"
+          id="horasSemanales"
+          name="horasSemanales"
+          required
+        />
+
+        <!-- Resoluciones -->
+        <label for="resolucionCU">Resolución CU:</label>
+        <input
+          type="text"
+          id="resolucionCU"
+          name="resolucionCU"
+          placeholder="No."
+          required
+        />
+        <input
+          type="date"
+          id="fechaResolucionCU"
+          name="fechaResolucionCU"
+          placeholder="Fecha"
+          required
+        />
+
+        <label for="resolucionCAIP">Resolución CAIP:</label>
+        <input
+          type="text"
+          id="resolucionCAIP"
+          name="resolucionCAIP"
+          placeholder="No."
+          required
+        />
+        <input
+          type="date"
+          id="fechaResolucionCAIP"
+          name="fechaResolucionCAIP"
+          placeholder="Fecha"
+          required
+        />
+
+        <label for="resolucionCGICT">Resolución CGICT:</label>
+        <input
+          type="text"
+          id="resolucionCGICT"
+          name="resolucionCGICT"
+          placeholder="No."
+          required
+        />
+        <input
+          type="date"
+          id="fechaResolucionCGICT"
+          name="fechaResolucionCGICT"
+          placeholder="Fecha"
+          required
+        />
+
+        <label for="resolucionDirectivoFacultad"
+          >Resolución Consejo Directivo Facultad:</label
+        >
+        <input
+          type="text"
+          id="resolucionDirectivoFacultad"
+          name="resolucionDirectivoFacultad"
+          placeholder="No."
+          required
+        />
+        <input
+          type="date"
+          id="fechaResolucionDirectivoFacultad"
+          name="fechaResolucionDirectivoFacultad"
+          placeholder="Fecha"
+          required
+        />
+
+        <label for="fechaInicioProyecto">Fecha Inicio del Proyecto:</label>
+        <input
+          type="date"
+          id="fechaInicioProyecto"
+          name="fechaInicioProyecto"
+          required
+        />
+
+        <label for="duracionSemestres">Duración en Semestres:</label>
+        <input
+          type="number"
+          id="duracionSemestres"
+          name="duracionSemestres"
+          required
+        />
+
+        <label for="fechaTerminoProyecto">Fecha Término del Proyecto:</label>
+        <input
+          type="date"
+          id="fechaTerminoProyecto"
+          name="fechaTerminoProyecto"
+          required
+        />
+
+        <label for="institucionesParticipantes"
+          >Instituciones Participantes:</label
+        >
+        <textarea
+          id="institucionesParticipantes"
+          name="institucionesParticipantes"
+          rows="4"
+        ></textarea>
+
+        <label for="entidadFinanciadoraNacional"
+          >Entidad Financiadora Nacional:</label
+        >
+        <input
+          type="text"
+          id="entidadFinanciadoraNacional"
+          name="entidadFinanciadoraNacional"
+        />
+
+        <label for="entidadFinanciadoraInternacional"
+          >Entidad Financiadora Internacional:</label
+        >
+        <input
+          type="text"
+          id="entidadFinanciadoraInternacional"
+          name="entidadFinanciadoraInternacional"
+        />
+      </section>
+
+      <section>
+        <h2>Descargar PDF con Campos Prellenados:</h2>
+        <p>Descargue el PDF con los campos prellenados:</p>
+        <a href="Formulario.pdf" download>Descargar PDF</a>
+      </section>
+
+      <!-- Campo para Cargar el PDF Completado -->
+      <section>
+        <h2>Adjuntar Archivo PDF Completo:</h2>
+        <label for="archivoPDFCompleto">Adjuntar PDF Completo:</label>
+        <input
+          type="file"
+          id="archivoPDFCompleto"
+          name="archivoPDFCompleto"
+          accept=".pdf"
+        />
+      </section>
+
+      <button id="enviar" type="submit">Enviar Informe</button>
+    </form>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
