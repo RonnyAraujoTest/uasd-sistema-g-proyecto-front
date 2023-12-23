@@ -1,0 +1,47 @@
+body {
+    background-color: #aff9d3;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    background-color: #96dfba;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.listado {
+    margin: 20px;
+}
+
+#tablaproyectos {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#tablaproyectos th,
+#tablaproyectos td {
+    border: 1px solid #96dfba;
+    padding: 10px;
+    text-align: left;
+}
+
+#tablaproyectos th {
+    background-color: #96dfba;
+    color: #fff;
+}
+
+#consulta {
+    background-color: #96dfba;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+#consulta:hover {
+    background-color: #aff9d3;
+}

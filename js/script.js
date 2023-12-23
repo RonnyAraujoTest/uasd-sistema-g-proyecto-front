@@ -22,8 +22,20 @@ function getFormData() {
 }
 
 async function postProyecto() {
+  /* const response = await fetch(
+  "https://uasd-sistema-g-proyectos-api-production.up.railway.app/api/proyectos",
+  {
+    method: "POST",
+    mode: "cors",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify(getFormData()),
+  }
+  );*/
+
   const response = await fetch(
-    "https://uasd-sistema-g-proyectos-api-production.up.railway.app/api/proyectos",
+    "http://localhost:8080/api/proyectos",
     {
       method: "POST",
       mode: "cors",
