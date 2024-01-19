@@ -45,3 +45,19 @@ body {
 #consulta:hover {
     background-color: #aff9d3;
 }
+
+.buscador {
+    margin-bottom: 20px;
+}
+
+#search {
+    width: 200px;
+    padding: 8px;
+    margin-right: 10px;
+}
+
+/* Estilos adicionales para resaltar el input de búsqueda al enfocarse */
+#search:focus {
+    border: 2px solid #96dfba;
+    outline: none;
+}
